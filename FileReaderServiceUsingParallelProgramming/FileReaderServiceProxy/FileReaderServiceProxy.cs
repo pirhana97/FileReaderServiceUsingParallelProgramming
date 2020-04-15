@@ -10,6 +10,9 @@ namespace FileReaderServiceProxy
 {
     public class FileReaderServiceProxy : ClientBase<IFileReaderService>, IFileReaderService
     {
+
+
+
         public FileReaderServiceProxy(string endpointName)
             : base(endpointName)
         { }

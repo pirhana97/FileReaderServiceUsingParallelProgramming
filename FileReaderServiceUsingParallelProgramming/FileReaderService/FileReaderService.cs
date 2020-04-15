@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FileReaderService
 {
+
     public class FileReaderService : IFileReaderService
     {
+
+
         public string GetAttributes(string filePath)
         {
             FileInfo fi = new System.IO.FileInfo(filePath);

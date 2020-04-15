@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace FileReaderService
 {
+   
     [ServiceContract()]
     public interface IFileReaderService
     {
