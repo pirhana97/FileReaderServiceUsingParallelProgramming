@@ -55,57 +55,57 @@ namespace FileReaderUIClient
             string filePath = FilePath.Text;
             FileInfo fileInfo = new FileInfo(filePath);
 
-            StringBuilder stringBuilder = new StringBuilder();
+                StringBuilder stringBuilder = new StringBuilder();
 
-            #region ParallelTasks
-            Parallel.Invoke(
+                #region ParallelTasks
+                Parallel.Invoke(
 
 
-                () =>
-                {
-                   
-                    FileAttributes.Text = proxy.GetAttributes(filePath);                   
-                },
-                                
-                () =>
-                {
+                    () =>
+                    {
 
-                    stringBuilder.Append("Type : " + fileInfo.Extension+"\n");
-                },
-                () =>
-                {
+                        FileAttributes.Text = proxy.GetAttributes(filePath);
+                    },
 
-                    stringBuilder.Append("Is ReadOnly : " + fileInfo.IsReadOnly + "\n");
-                },
-                () =>
-                {
+                    () =>
+                    {
 
-                    stringBuilder.Append("Creation time : " + fileInfo.CreationTime + "\n");
-                },
+                        stringBuilder.Append("Type : " + fileInfo.Extension + "\n");
+                    },
+                    () =>
+                    {
 
-                () =>
-                  {
+                        stringBuilder.Append("Is ReadOnly : " + fileInfo.IsReadOnly + "\n");
+                    },
+                    () =>
+                    {
 
-                      stringBuilder.Append("Last access time : " + fileInfo.LastAccessTime + "\n");
-                  },
+                        stringBuilder.Append("Creation time : " + fileInfo.CreationTime + "\n");
+                    },
 
-                () =>
-                {
+                    () =>
+                      {
 
-                    stringBuilder.Append("Last write time : " + fileInfo.LastWriteTime + "\n");
-                },
+                          stringBuilder.Append("Last access time : " + fileInfo.LastAccessTime + "\n");
+                      },
 
-                () =>
-                {
-                    stringBuilder.Append("Directory Name : " + fileInfo.DirectoryName+"\n");
-                   
-                }
+                    () =>
+                    {
 
-            );
-            #endregion
+                        stringBuilder.Append("Last write time : " + fileInfo.LastWriteTime + "\n");
+                    },
 
-            System.Windows.MessageBox.Show(stringBuilder.ToString(), "File Details");
+                    () =>
+                    {
+                        stringBuilder.Append("Directory Name : " + fileInfo.DirectoryName + "\n");
 
+                    }
+
+                );
+                #endregion
+
+                System.Windows.MessageBox.Show(stringBuilder.ToString(), "File Details");
+            
         }
 
         private void OnClosing(object sender, CancelEventArgs cancelEventArgs)

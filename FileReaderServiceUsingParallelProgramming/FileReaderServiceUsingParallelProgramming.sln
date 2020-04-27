@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReaderServiceProxy", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReaderUIClient", "FileReaderUIClient\FileReaderUIClient.csproj", "{953CCDBD-4ED6-4A25-81FA-A08EB5AFEB42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewerUIClient", "ImageViewerUIClient\ImageViewerUIClient.csproj", "{56DF4B3A-2C27-4890-9361-DA889D8116DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,14 @@ Global
 		{953CCDBD-4ED6-4A25-81FA-A08EB5AFEB42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{953CCDBD-4ED6-4A25-81FA-A08EB5AFEB42}.Release|x64.ActiveCfg = Release|Any CPU
 		{953CCDBD-4ED6-4A25-81FA-A08EB5AFEB42}.Release|x64.Build.0 = Release|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Debug|x64.Build.0 = Debug|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{56DF4B3A-2C27-4890-9361-DA889D8116DB}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
